@@ -9,12 +9,12 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://gitlab.com/hadzhioglu/padavan-ng
-  REPO_BRANCH: master
-  DEVICE_NAME: YK-L1
+  REPO_URL: https://github.com/h8820/padavan-ng
+  REPO_BRANCH: main
+  
   CUSTOMIZE_FIRMWARE: false
   USE_PRECOMPILED_TOOLCHAIN: true
-  CUSTOMIZE_SH: scripts/padavan/customize.sh
+  
   DL_TOOLCHAIN_SH: scripts/padavan/dl_toolchain-ng.sh
   TZ: Asia/Ho_Chi_Minh
 
@@ -43,11 +43,7 @@ jobs:
         cd opt/padavan-ng
         git checkout $REPO_BRANCH
 
-    - name: Load device configuration
-      run: |
-        cp -R configs/padavan-ng/$DEVICE_NAME opt/padavan-ng/trunk/configs/boards/YOUKU
-        cp configs/padavan-ng/$DEVICE_NAME.config opt/padavan-ng/trunk/.config
-        cp configs/padavan-ng/$DEVICE_NAME.config opt/padavan-ng/trunk/configs/templates/YOUKU/$DEVICE_NAME.config
+   
 
     - name: Customize firmware
       if: env.CUSTOMIZE_FIRMWARE == 'true' && !cancelled()
