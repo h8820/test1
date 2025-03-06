@@ -5,8 +5,8 @@
 
 # File info
 DIR_NAME="out"
-FILE_NAME="padavan-ng-tlc"
-FILE_URL="https://github.com/vietanhbui2000/Build-Padavan-OpenWrt/raw/main/scripts/padavan/$FILE_NAME.tar.xz"
+FILE_NAME="out"
+FILE_URL="https://github.com/h8820/test1/raw/refs/heads/main/scripts/padavan/$FILE_NAME.tar.xz"
 
 # Download and extract file(s)
 curl -OL $FILE_URL
