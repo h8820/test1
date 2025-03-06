@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://gitlab.com/hadzhioglu/padavan-ng
+  REPO_URL: https://github.com/h8820/padavan-ng
   REPO_BRANCH: master
   DEVICE_NAME: YK-L1
   CUSTOMIZE_FIRMWARE: false
