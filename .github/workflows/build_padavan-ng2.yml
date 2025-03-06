@@ -3,7 +3,7 @@
 #            hanwckf | https://github.com/hanwckf             #
 ###############################################################
 
-name: Build Padavan-NG
+name: Build Padavan-NG2
 
 on:
   workflow_dispatch:
